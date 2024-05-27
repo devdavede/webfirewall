@@ -1,4 +1,4 @@
-CREATE TABLE your_table_name (
+CREATE TABLE accesslog (
     ID INT AUTO_INCREMENT PRIMARY KEY,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     ip TEXT,
