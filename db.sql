@@ -1,0 +1,6 @@
+CREATE TABLE your_table_name (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    ip TEXT,
+    code INT
+);
