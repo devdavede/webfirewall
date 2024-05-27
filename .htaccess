@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond ${access:%{REMOTE_ADDR}} deny [NC]
+RewriteRule ^ - [L,F]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ /error/404.php [L]
+
+ErrorDocument 404 error/404.php
